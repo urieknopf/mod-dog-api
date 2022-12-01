@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from core.models import Sample
+from core.models import *
 
 
-admin.site.register(Sample)
+admin.site.register([OriginalImages, ModdedImages, Key])
