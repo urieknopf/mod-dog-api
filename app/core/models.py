@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class OriginalImages(models.Model):
     created = models.DateTimeField(auto_now_add=True)
     file_name = models.CharField(max_length=250) # could switch to FilePathField TODO: try that

@@ -18,10 +18,10 @@ class KeySerializer(serializers.ModelSerializer):
         model = Key
         fields = ['id', 'value']
 
-    def update(self, instance, validated_data):
-        """
-        Update and return an existing Keys instance, given the validated data.
-        """
-        instance.value = validated_data.get('title', instance.title)
-        instance.save()
-        return instance
+    # def update(self, instance, validated_data):
+    #     """
+    #     Update and return an existing Key instance.
+    #     """
+    #     instance.value = validated_data.get('value', instance.value)
+    #     instance.save()
+    #     return instance
