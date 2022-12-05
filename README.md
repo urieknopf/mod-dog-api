@@ -18,11 +18,11 @@ Run the following command:
 And run this command: 
 > docker-compose up -d
 
-(if the above commands give you issues, try running them with "docker compose", with a space instead of hyphen)
+(If the above commands give you issues, try running them with "docker compose", with a space instead of hyphen)
 (there are a few ways to accomplish the past few steps, so if you have experience with docker and feel comfortable building and running the containers another way, go for it!)
 
 ### Step 3: Let's DjanGO
-- open http://localhost:8000/ in your browser. It should say "Index loaded successfully"
+Open http://localhost:8000/ in your browser. It should say "Index loaded successfully"
 
 ## Step 4: There are two ways to access the API Endpoints, the terminal and curling is more exhaustive and the browser is simpler:
 
