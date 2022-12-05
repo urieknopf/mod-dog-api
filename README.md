@@ -7,7 +7,7 @@ Welcome to the mod dog api where we have dogs and keys and keys and dogs!
 ## To set up a local enviroment of the application, please remain in the ride at all times and do the following:
 
 ### Step 1: Acquire code
-- Clone the repository to your local machine [more informatio at this tutorial](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
+Clone the repository to your local machine [more information at this tutorial](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
 
 ### Step 2: Get your docker on
 Make sure that docker works on your machine [more info about docker here](https://docs.docker.com/)
