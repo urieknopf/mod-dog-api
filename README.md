@@ -43,17 +43,20 @@ To view a specific key:
 To view all keys:
 > http://localhost:8000/keys/
 
-To view a specific key:
+To view a specific key (where <pk> is replaced with primary key or id of key):
 > http://localhost:8000/keys/<pk>/
-(where <pk> is replaced with primary key or id of key)
+
+
 
 ## Other things to do:
 ### Run Tests:
 exec into the docker container by running the following command (more documentation here: https://docs.docker.com/engine/reference/commandline/exec/):
 > docker exec [OPTIONS] CONTAINER COMMAND [ARG...]
+
 You can find the container name by running docker ps and looking for the container you want to exec into. 
 For example, when run on my local machine running ubuntu the command is:
 > docker exec -it mod-dog-api_app_1 /bin/sh
+
 But this may be just "bash" instead of /bin/sh on certain machines.
 Once in the container (the terminal prompt should have changed to something like "/app $") run:
 > python manage.py test
