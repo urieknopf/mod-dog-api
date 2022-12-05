@@ -7,4 +7,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('keys/', key_list),
     path('keys/<int:pk>/', key_detail),
+    path('dogs/', get_dogs),
 ]

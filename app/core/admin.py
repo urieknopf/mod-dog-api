@@ -3,4 +3,4 @@ from django.contrib import admin
 from core.models import *
 
 
-admin.site.register([OriginalImages, ModdedImages, Key])
+admin.site.register([OriginalImage, Key])
