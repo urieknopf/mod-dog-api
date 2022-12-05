@@ -14,8 +14,10 @@ Make sure that docker works on your machine [more info about docker here](https:
 Open your terminal and navigate to the folder of the repository (the folder contains a folder named 'app', a docker-compose.yml file, a DockerFile file, and more)
 Run the following command: 
 > docker-compose build 
+
 And run this command: 
 > docker-compose up -d
+
 (if the above commands give you issues, try running them with "docker compose", with a space instead of hyphen)
 (there are a few ways to accomplish the past few steps, so if you have experience with docker and feel comfortable building and running the containers another way, go for it!)
 
@@ -27,16 +29,20 @@ And run this command:
 #### To access the API Endpoints via terminal:
 To create a new key:
 > curl -X POST http://localhost:8000/keys/
+
 To Update an existing key:
 > curl -X PUT http://localhost:8000/keys/<pk>/
+
 To view all keys:
 > curl -X GET http://localhost:8000/keys/
+
 To view a specific key:
 > curl -X GET http://localhost:8000/keys/<pk>/
 
 #### To access the API Endpoints via browser:
 To view all keys:
 > http://localhost:8000/keys/
+
 To view a specific key:
 > http://localhost:8000/keys/<pk>/
 (where <pk> is replaced with primary key or id of key)
