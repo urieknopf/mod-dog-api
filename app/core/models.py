@@ -11,12 +11,18 @@ class OriginalImage(models.Model):
         ordering = ['created']
 
 
-# class ModdedImages(models.Model):
-#     created = models.DateTimeField(auto_now_add=True)
-#     file_name = models.CharField(max_length=250) # could switch to FilePathField TODO: try that
+class ModifiedImage(models.Model):
+    original_image = models.OneToOneField(
+        OriginalImage,
+        on_delete=models.CASCADE,
+        primary_key=True,
+    )
+    created = models.DateTimeField(auto_now_add=True)
+    file = models.ImageField(upload_to='images/dogs/modified/', height_field=None, width_field=None, max_length=100, null=False)
+    file_name = models.CharField(max_length=250, default='') 
 
-#     class Meta:
-#         ordering = ['created']
+    class Meta:
+        ordering = ['created']
 
 
 class Key(models.Model):

@@ -1,8 +1,7 @@
 import json
 import requests
-import urllib
 
-from django.core.files import File
+from django.core.files import File # TODO: Remove if not used
 from django.core.files.base import ContentFile
 from django.core.files.temp import NamedTemporaryFile
 from django.http import HttpResponse, JsonResponse
@@ -74,8 +73,9 @@ def get_dogs(request):
     """
     if request.method == 'GET':
         try:
+            count = OriginalImage.objects.all().count()
             serializer = OriginalImageSerializer(OriginalImage.objects.all(), many=True)
-            return JsonResponse(serializer.data, safe=False)
+            return JsonResponse(serializer.data, status=200, safe=False)
         except Exception as error:
             return HttpResponse(f"Error: {error}", status=400)
     elif request.method == 'POST':

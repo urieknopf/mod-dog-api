@@ -47,6 +47,16 @@ To view a specific key (where <pk> is replaced with primary key or id of key):
 > http://localhost:8000/keys/<pk>/
 
 
+## Step 5: (work in progress) Manage dogs?:
+To load dogs into the database (currently loads null instead of an imagefield)
+> curl -X POST http://localhost:8000/dogs/
+
+To view a list of dogs:
+> curl -X GET http://localhost:8000/dogs/
+
+#### To access the dog API Endpoints via browser:
+To view all dogs:
+> http://localhost:8000/dogs/
 
 ## Other things to do:
 ### Run Tests:
