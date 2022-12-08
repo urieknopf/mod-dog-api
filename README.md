@@ -24,7 +24,7 @@ And run this command:
 ### Step 3: Let's DjanGO
 Open http://localhost:8000/ in your browser. It should say "Index loaded successfully"
 
-## Step 4: There are two ways to access the API Endpoints, the terminal and curling is more exhaustive and the browser is simpler:
+### Step 4: There are two ways to access the API Endpoints, the terminal and curling is more exhaustive and the browser is simpler:
 
 #### To access the API Endpoints via terminal:
 To create a new key:
@@ -47,7 +47,7 @@ To view a specific key (where <pk> is replaced with primary key or id of key):
 > http://localhost:8000/keys/<pk>/
 
 
-## Step 5: (work in progress) Manage dogs?:
+### Step 5: (work in progress) Manage dogs?:
 To load dogs into the database (currently loads null instead of an imagefield)
 > curl -X POST http://localhost:8000/dogs/
 
